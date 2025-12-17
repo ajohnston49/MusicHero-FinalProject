@@ -1,0 +1,189 @@
+[gd_scene load_steps=21 format=3 uid="uid://eeno6ul87epq"]
+
+[ext_resource type="Script" uid="uid://beb158fjqiolt" path="res://instructions_menu.gd" id="1_0k7t0"]
+[ext_resource type="Texture2D" uid="uid://bfdkuuvpfybj4" path="res://Assets/menu.png" id="2_5tt5n"]
+[ext_resource type="Texture2D" uid="uid://chqlpf1fcrwen" path="res://Assets/button.png" id="3_bnh8g"]
+[ext_resource type="Texture2D" uid="uid://v3a3hvdhoare" path="res://Characters/DinoSprites - mort.png" id="4_5hvet"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yyvfu"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mm65e"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ymdqd"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_avwo5"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1qktc"]
+line_spacing = 15.0
+font_size = 19
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwesv"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2ii1"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(408, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dpi7"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wd2m"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(432, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_euvu7"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q50m2"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(456, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aee7n"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xv1vd"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(480, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehwdb"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i15w"]
+atlas = ExtResource("4_5hvet")
+region = Rect2(504, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uybus"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwesv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2ii1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dpi7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wd2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_euvu7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q50m2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aee7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xv1vd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehwdb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0i15w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="InstructionsMenu" type="Node2D"]
+script = ExtResource("1_0k7t0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(512, 384)
+texture = ExtResource("2_5tt5n")
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 414.99997
+offset_top = 631.0
+offset_right = 446.99997
+offset_bottom = 663.0
+scale = Vector2(2.8268077, 2.668018)
+icon = ExtResource("3_bnh8g")
+flat = true
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 433.0
+offset_top = 79.0
+offset_right = 597.0
+offset_bottom = 121.0
+text = "Music Hero"
+label_settings = SubResource("LabelSettings_yyvfu")
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+offset_left = 187.0
+offset_top = 144.00002
+offset_right = 419.0
+offset_bottom = 271.0
+scale = Vector2(1.4321474, 1.3409966)
+text = "You Are Rex! 
+The Lonley Dino Who Dreams 
+Of Moving Away 
+From His Broken Life 
+And Becoming A RockStar! "
+label_settings = SubResource("LabelSettings_mm65e")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer"]
+offset_left = 514.0
+offset_top = 651.0
+offset_right = 646.0
+offset_bottom = 693.0
+scale = Vector2(1.1940191, 1)
+text = "Continue"
+label_settings = SubResource("LabelSettings_ymdqd")
+
+[node name="Label4" type="Label" parent="CanvasLayer"]
+offset_left = 586.0
+offset_top = 135.0
+offset_right = 832.0
+offset_bottom = 314.0
+scale = Vector2(1.2155269, 1.2960061)
+text = "There are four Stages: 
+- The Mobile Home
+- The Garage
+- The Bar
+- The Main Stage
+Each one of these has 
+its own set of songs and tracks. "
+label_settings = SubResource("LabelSettings_avwo5")
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="CanvasLayer"]
+offset_left = 60.0
+offset_top = 369.0
+offset_right = 954.0
+offset_bottom = 692.0
+text = "How to Play:
+- Pick a Stage By Walking to it (A D or < >) and pressing the interact key ( SPACE )
+- Choose a song.
+- You will use either 1 2 3 4 or ASDF to hit the notes as they come down the track. 
+- Missing Notes or Hitting Random Keys Will Result in Failure.
+- The Meter To The Right Of The Screen Can Help You Track Your Performace As Well As Your Score!
+
+"
+label_settings = SubResource("LabelSettings_1qktc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(80, 229)
+scale = Vector2(7.0340333, 6.42382)
+sprite_frames = SubResource("SpriteFrames_uybus")
+frame_progress = 0.06932911

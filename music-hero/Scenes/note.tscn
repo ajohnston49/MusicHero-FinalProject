@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://e6yeiokh3sro"]
+
+[ext_resource type="Script" uid="uid://cl7fexkkglbgo" path="res://Scripts/note.gd" id="1_ucs03"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ucs03"]
+
+[node name="Note" type="Area2D"]
+script = ExtResource("1_ucs03")
+
+[node name="Body" type="Polygon2D" parent="."]
+
+[node name="Tail" type="Polygon2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+scale = Vector2(0.88549364, 0.9909527)
+shape = SubResource("CircleShape2D_ucs03")

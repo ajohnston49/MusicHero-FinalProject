@@ -1,0 +1,142 @@
+[gd_scene load_steps=10 format=3 uid="uid://binl48y0ys8ma"]
+
+[ext_resource type="Script" uid="uid://duak8ao06o7kw" path="res://Scripts/stage_menu.gd" id="1_bmsay"]
+[ext_resource type="Texture2D" uid="uid://bfdkuuvpfybj4" path="res://Assets/menu.png" id="2_4vlkx"]
+[ext_resource type="Texture2D" uid="uid://chqlpf1fcrwen" path="res://Assets/button.png" id="3_prscs"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_benf1"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wcrep"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_alkc8"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kk38d"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ck47t"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_vn7vl"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[node name="StageMenu" type="Node2D"]
+script = ExtResource("1_bmsay")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(512, 384)
+texture = ExtResource("2_4vlkx")
+
+[node name="Menu" type="Label" parent="CanvasLayer"]
+offset_left = 345.0
+offset_top = 67.0
+offset_right = 625.0
+offset_bottom = 109.0
+scale = Vector2(1.1920682, 1.330869)
+text = "RockStar Stage Hits"
+label_settings = SubResource("LabelSettings_benf1")
+
+[node name="Back" type="Label" parent="CanvasLayer"]
+offset_left = 243.0
+offset_top = 548.0
+offset_right = 360.0
+offset_bottom = 590.0
+text = "Go Back"
+label_settings = SubResource("LabelSettings_wcrep")
+
+[node name="BackButton" type="Button" parent="CanvasLayer"]
+offset_left = 164.0
+offset_top = 538.0
+offset_right = 196.0
+offset_bottom = 570.0
+scale = Vector2(2.2222223, 2.2333333)
+icon = ExtResource("3_prscs")
+flat = true
+
+[node name="SongButtons" type="Node2D" parent="CanvasLayer"]
+
+[node name="Hearts" type="Node2D" parent="CanvasLayer/SongButtons"]
+
+[node name="Label" type="Label" parent="CanvasLayer/SongButtons/Hearts"]
+offset_left = 230.0
+offset_top = 212.0
+offset_right = 898.0
+offset_bottom = 254.0
+text = "Hearts Burst Into Fire - Bullet for my Valentine"
+label_settings = SubResource("LabelSettings_alkc8")
+
+[node name="Button" type="Button" parent="CanvasLayer/SongButtons/Hearts"]
+offset_left = 162.0
+offset_top = 202.99998
+offset_right = 194.0
+offset_bottom = 234.99998
+scale = Vector2(1.8888888, 1.969697)
+icon = ExtResource("3_prscs")
+flat = true
+
+[node name="Andy" type="Node2D" parent="CanvasLayer/SongButtons"]
+
+[node name="Label" type="Label" parent="CanvasLayer/SongButtons/Andy"]
+offset_left = 245.0
+offset_top = 465.0
+offset_right = 776.0
+offset_bottom = 507.0
+text = "After Midnight - Andy James (Special)"
+label_settings = SubResource("LabelSettings_kk38d")
+
+[node name="Button" type="Button" parent="CanvasLayer/SongButtons/Andy"]
+offset_left = 169.0
+offset_top = 456.99997
+offset_right = 201.0
+offset_bottom = 488.99997
+scale = Vector2(1.8684772, 1.9941915)
+icon = ExtResource("3_prscs")
+flat = true
+
+[node name="IRan" type="Node2D" parent="CanvasLayer/SongButtons"]
+
+[node name="Label" type="Label" parent="CanvasLayer/SongButtons/IRan"]
+offset_left = 230.0
+offset_top = 292.0
+offset_right = 798.0
+offset_bottom = 334.0
+text = "I Ran (So Far Away) - A Flock Of Seagulls"
+label_settings = SubResource("LabelSettings_ck47t")
+
+[node name="Button" type="Button" parent="CanvasLayer/SongButtons/IRan"]
+offset_left = 162.00002
+offset_top = 281.00003
+offset_right = 194.00002
+offset_bottom = 313.00003
+scale = Vector2(1.9345813, 2.114939)
+icon = ExtResource("3_prscs")
+flat = true
+
+[node name="Destruction" type="Node2D" parent="CanvasLayer/SongButtons"]
+
+[node name="Label" type="Label" parent="CanvasLayer/SongButtons/Destruction"]
+offset_left = 234.0
+offset_top = 377.0
+offset_right = 547.0
+offset_bottom = 419.0
+text = "Destruction - Joywave"
+label_settings = SubResource("LabelSettings_vn7vl")
+
+[node name="Button" type="Button" parent="CanvasLayer/SongButtons/Destruction"]
+offset_left = 164.00002
+offset_top = 373.0
+offset_right = 196.00002
+offset_bottom = 405.0
+scale = Vector2(1.8857143, 1.8222222)
+icon = ExtResource("3_prscs")
+flat = true

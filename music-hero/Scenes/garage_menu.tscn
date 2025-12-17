@@ -1,0 +1,119 @@
+[gd_scene load_steps=9 format=3 uid="uid://msi7equrpusd"]
+
+[ext_resource type="Script" uid="uid://v7u36ro8y2oe" path="res://Scripts/garage_menu.gd" id="1_oc6ue"]
+[ext_resource type="Texture2D" uid="uid://bfdkuuvpfybj4" path="res://Assets/menu.png" id="2_ugmtt"]
+[ext_resource type="Texture2D" uid="uid://chqlpf1fcrwen" path="res://Assets/button.png" id="3_ugmtt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_m220i"]
+font_size = 30
+font_color = Color(0.051970966, 0.05197096, 0.05197095, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ocf6g"]
+font_size = 30
+font_color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mo5sr"]
+font_size = 30
+font_color = Color(0.043039158, 0.04303915, 0.04303915, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8nqa5"]
+font_size = 30
+font_color = Color(0.021434637, 0.021434635, 0.021434633, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2pxdf"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[node name="GarageMenu" type="Node2D"]
+script = ExtResource("1_oc6ue")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(512, 384)
+texture = ExtResource("2_ugmtt")
+
+[node name="Menu Title" type="Label" parent="CanvasLayer"]
+offset_left = 335.99997
+offset_top = 22.0
+offset_right = 547.0
+offset_bottom = 71.0
+scale = Vector2(1.7563925, 2.5730293)
+text = "Garage Jams"
+label_settings = SubResource("LabelSettings_m220i")
+
+[node name="SongButtons" type="Node2D" parent="CanvasLayer"]
+
+[node name="Riptide" type="Node2D" parent="CanvasLayer/SongButtons"]
+
+[node name="Button" type="Button" parent="CanvasLayer/SongButtons/Riptide"]
+offset_left = 200.0
+offset_top = 158.0
+offset_right = 232.0
+offset_bottom = 190.0
+scale = Vector2(3.4729412, 3.4508014)
+icon = ExtResource("3_ugmtt")
+flat = true
+
+[node name="Label" type="Label" parent="CanvasLayer/SongButtons/Riptide"]
+offset_left = 340.0
+offset_top = 193.0
+offset_right = 607.0
+offset_bottom = 229.0
+text = "Riptide - Sick Puppies"
+label_settings = SubResource("LabelSettings_ocf6g")
+
+[node name="Shine" type="Node2D" parent="CanvasLayer/SongButtons"]
+
+[node name="Button" type="Button" parent="CanvasLayer/SongButtons/Shine"]
+offset_left = 198.0
+offset_top = 232.0
+offset_right = 230.0
+offset_bottom = 264.0
+scale = Vector2(3.60978, 4.0056024)
+icon = ExtResource("3_ugmtt")
+flat = true
+
+[node name="Label" type="Label" parent="CanvasLayer/SongButtons/Shine"]
+offset_left = 339.0
+offset_top = 272.0
+offset_right = 654.0
+offset_bottom = 314.0
+text = "Shine - Collective Soul"
+label_settings = SubResource("LabelSettings_mo5sr")
+
+[node name="NothingElseMatters" type="Node2D" parent="CanvasLayer/SongButtons"]
+
+[node name="Button" type="Button" parent="CanvasLayer/SongButtons/NothingElseMatters"]
+offset_left = 193.0
+offset_top = 313.0
+offset_right = 225.0
+offset_bottom = 345.0
+scale = Vector2(3.9001076, 3.8300676)
+icon = ExtResource("3_ugmtt")
+flat = true
+
+[node name="Label" type="Label" parent="CanvasLayer/SongButtons/NothingElseMatters"]
+offset_left = 341.0
+offset_top = 351.0
+offset_right = 739.0
+offset_bottom = 387.0
+text = "Nothing Else Matters - Metallica"
+label_settings = SubResource("LabelSettings_8nqa5")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 341.0
+offset_top = 430.0
+offset_right = 525.0
+offset_bottom = 472.0
+text = "Go Back"
+label_settings = SubResource("LabelSettings_2pxdf")
+
+[node name="BackButton" type="Button" parent="CanvasLayer"]
+offset_left = 197.0
+offset_top = 389.0
+offset_right = 229.0
+offset_bottom = 421.0
+scale = Vector2(3.66151, 3.985433)
+icon = ExtResource("3_ugmtt")
+flat = true

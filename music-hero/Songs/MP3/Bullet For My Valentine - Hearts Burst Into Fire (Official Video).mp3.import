@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfmqw76ejgfje"
+path="res://.godot/imported/Bullet For My Valentine - Hearts Burst Into Fire (Official Video).mp3-b0f13512847c22916e20ea68d52ab35a.mp3str"
+
+[deps]
+
+source_file="res://Songs/MP3/Bullet For My Valentine - Hearts Burst Into Fire (Official Video).mp3"
+dest_files=["res://.godot/imported/Bullet For My Valentine - Hearts Burst Into Fire (Official Video).mp3-b0f13512847c22916e20ea68d52ab35a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

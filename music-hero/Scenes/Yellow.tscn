@@ -1,0 +1,101 @@
+[gd_scene load_steps=14 format=3 uid="uid://bptagf87mwcra"]
+
+[ext_resource type="Texture2D" uid="uid://dookn3brlbno7" path="res://Characters/DinoSprites - tard.png" id="1_jp1yh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpx6w"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrra4"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5txxe"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jj1rf"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp1yh"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_exrna"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4a8iu"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(144, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8cjt0"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bpok"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(192, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2efs"]
+atlas = ExtResource("1_jp1yh")
+region = Rect2(216, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_exrna"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpx6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrra4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5txxe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jj1rf")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp1yh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_exrna")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4a8iu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8cjt0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bpok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2efs")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4a8iu"]
+radius = 16.03122
+
+[node name="Yellow" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_exrna")
+animation = &"idle"
+frame_progress = 0.27312258
+
+[node name="YellowChatArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YellowChatArea"]
+shape = SubResource("CircleShape2D_4a8iu")

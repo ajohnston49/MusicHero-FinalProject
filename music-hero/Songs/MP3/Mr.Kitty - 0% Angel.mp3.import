@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3yqkmylnrcsa"
+path="res://.godot/imported/Mr.Kitty - 0% Angel.mp3-12cae48f7e4b0d85f2612cd169168d10.mp3str"
+
+[deps]
+
+source_file="res://Songs/MP3/Mr.Kitty - 0% Angel.mp3"
+dest_files=["res://.godot/imported/Mr.Kitty - 0% Angel.mp3-12cae48f7e4b0d85f2612cd169168d10.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

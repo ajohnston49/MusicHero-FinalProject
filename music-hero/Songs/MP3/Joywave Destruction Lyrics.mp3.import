@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://doegax2bx1y6l"
+path="res://.godot/imported/Joywave Destruction Lyrics.mp3-1a708405bd2a8c7afce26a5f6e47b26b.mp3str"
+
+[deps]
+
+source_file="res://Songs/MP3/Joywave Destruction Lyrics.mp3"
+dest_files=["res://.godot/imported/Joywave Destruction Lyrics.mp3-1a708405bd2a8c7afce26a5f6e47b26b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

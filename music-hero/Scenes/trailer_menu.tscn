@@ -1,0 +1,95 @@
+[gd_scene load_steps=8 format=3 uid="uid://csfjsih5cb04p"]
+
+[ext_resource type="Texture2D" uid="uid://bfdkuuvpfybj4" path="res://Assets/menu.png" id="1_da7kg"]
+[ext_resource type="Script" uid="uid://v31xnq2h2rc0" path="res://Scripts/trailer_menu.gd" id="1_ys8y3"]
+[ext_resource type="Texture2D" uid="uid://chqlpf1fcrwen" path="res://Assets/button.png" id="2_ys8y3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mae5d"]
+font_size = 64
+font_color = Color(0.0018410678, 0.0018410682, 0.0018410678, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4hy44"]
+font_size = 30
+font_color = Color(0.033853278, 0.033853278, 0.033853274, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_nrjw1"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ys8y3"]
+font_size = 30
+font_color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="Trailer_Menu" type="Node2D"]
+script = ExtResource("1_ys8y3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Menu" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(512, 385)
+texture = ExtResource("1_da7kg")
+
+[node name="MenuTitle" type="Label" parent="CanvasLayer"]
+offset_left = 229.0
+offset_top = 42.0
+offset_right = 807.0
+offset_bottom = 130.0
+text = "Mobile Home Jams"
+label_settings = SubResource("LabelSettings_mae5d")
+
+[node name="SongButtons" type="Node2D" parent="CanvasLayer"]
+
+[node name="One" type="Node2D" parent="CanvasLayer/SongButtons"]
+
+[node name="Button" type="Button" parent="CanvasLayer/SongButtons/One"]
+offset_left = 157.0
+offset_top = 205.0
+offset_right = 189.0
+offset_bottom = 237.0
+scale = Vector2(3.925189, 3.5174282)
+icon = ExtResource("2_ys8y3")
+flat = true
+
+[node name="Label" type="Label" parent="CanvasLayer/SongButtons/One"]
+offset_left = 291.0
+offset_top = 235.0
+offset_right = 743.0
+offset_bottom = 277.0
+text = "One Thing - Finger Eleven"
+label_settings = SubResource("LabelSettings_4hy44")
+
+[node name="OAngel" type="Node2D" parent="CanvasLayer/SongButtons"]
+
+[node name="Button" type="Button" parent="CanvasLayer/SongButtons/OAngel"]
+offset_left = 158.0
+offset_top = 292.0
+offset_right = 190.0
+offset_bottom = 324.0
+scale = Vector2(3.925189, 3.5174282)
+icon = ExtResource("2_ys8y3")
+flat = true
+
+[node name="Label" type="Label" parent="CanvasLayer/SongButtons/OAngel"]
+offset_left = 296.0
+offset_top = 322.0
+offset_right = 577.0
+offset_bottom = 364.0
+text = "0% Angel - Mr. Kitty"
+label_settings = SubResource("LabelSettings_nrjw1")
+
+[node name="BackButton" type="Button" parent="CanvasLayer"]
+offset_left = 156.0
+offset_top = 374.0
+offset_right = 188.0
+offset_bottom = 406.0
+scale = Vector2(4.1588902, 3.8067334)
+icon = ExtResource("2_ys8y3")
+flat = true
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 295.0
+offset_top = 411.0
+offset_right = 412.0
+offset_bottom = 453.0
+text = "Go Back"
+label_settings = SubResource("LabelSettings_ys8y3")

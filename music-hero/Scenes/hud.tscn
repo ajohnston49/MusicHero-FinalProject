@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://drsmjkb76kkt2"]
+
+[ext_resource type="Texture2D" uid="uid://blndq31abauuk" path="res://Assets/RockMeter.png" id="1_37p78"]
+[ext_resource type="Script" uid="uid://d4cjluje0pqoa" path="res://Scripts/hud.gd" id="1_64ctp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_64ctp"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_64ctp")
+
+[node name="RockMeter" type="Sprite2D" parent="."]
+position = Vector2(839, 568)
+scale = Vector2(0.94199985, 0.98500013)
+texture = ExtResource("1_37p78")
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 445.0
+offset_right = 848.0
+offset_bottom = 468.0
+text = "10000000000"
+label_settings = SubResource("LabelSettings_64ctp")
+
+[node name="Arrow" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 833.0
+offset_top = 594.0
+offset_right = 873.0
+offset_bottom = 634.0
+rotation = -3.0543263
+scale = Vector2(1.2696952, 0.05337782)
+color = Color(0, 0, 0, 1)

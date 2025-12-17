@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://djc1b6yvyddkf"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Notes" type="Node2D" parent="."]

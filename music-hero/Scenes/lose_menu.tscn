@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://cemuowtvuin53"]
+
+[ext_resource type="Script" uid="uid://broit48whbpyo" path="res://Scripts/lose_menu.gd" id="1_iy3yv"]
+[ext_resource type="Texture2D" uid="uid://bfdkuuvpfybj4" path="res://Assets/menu.png" id="2_l0gj8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6d0jo"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+outline_size = 8
+outline_color = Color(0.9843137, 0.011764706, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_iy3yv"]
+font_size = 30
+font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+
+[node name="LoseMenu" type="Node2D"]
+script = ExtResource("1_iy3yv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(512, 384)
+texture = ExtResource("2_l0gj8")
+
+[node name="RetryButton" type="Button" parent="CanvasLayer"]
+offset_left = 426.0
+offset_top = 407.0
+offset_right = 476.0
+offset_bottom = 438.0
+scale = Vector2(3.4696343, 2.6083508)
+text = "Retry"
+
+[node name="QuitButton" type="Button" parent="CanvasLayer"]
+offset_left = 437.00003
+offset_top = 543.0
+offset_right = 479.00003
+offset_bottom = 574.0
+scale = Vector2(3.8254237, 2.9701498)
+text = "Quit"
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 182.0
+offset_top = 107.0
+offset_right = 344.0
+offset_bottom = 149.0
+scale = Vector2(4.1522675, 5.977863)
+text = "You Lose!!!!"
+label_settings = SubResource("LabelSettings_6d0jo")
+
+[node name="SongTitleLabel" type="Label" parent="CanvasLayer"]
+offset_left = 283.0
+offset_top = 59.0
+offset_right = 598.0
+offset_bottom = 101.0
+scale = Vector2(1.4360894, 1.3115044)
+text = "Shine - Collective Soul"
+label_settings = SubResource("LabelSettings_iy3yv")

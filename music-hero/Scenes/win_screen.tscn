@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfeylux376nvw"]
+
+[ext_resource type="Script" uid="uid://dxw67wglr8go" path="res://Scripts/win_screen.gd" id="1_a00f1"]
+[ext_resource type="Texture2D" uid="uid://bfdkuuvpfybj4" path="res://Assets/menu.png" id="2_awi1s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wmwda"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_l5t5q"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1txte"]
+font_size = 35
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_26557"]
+font_size = 30
+font_color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+
+[node name="Win_Screen" type="Node2D"]
+script = ExtResource("1_a00f1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(512, 384)
+texture = ExtResource("2_awi1s")
+
+[node name="SongTitleLabel" type="Label" parent="CanvasLayer"]
+offset_left = 233.0
+offset_top = 48.0
+offset_right = 548.0
+offset_bottom = 90.0
+scale = Vector2(1.6601696, 1.510802)
+text = "Shine - Collective Soul"
+label_settings = SubResource("LabelSettings_wmwda")
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer"]
+offset_left = 420.0
+offset_top = 321.0
+offset_right = 608.0
+offset_bottom = 363.0
+scale = Vector2(1.2055877, 1.2557869)
+text = "10000000000"
+label_settings = SubResource("LabelSettings_l5t5q")
+
+[node name="WinLabel" type="Label" parent="CanvasLayer"]
+offset_left = 339.99997
+offset_top = 140.0
+offset_right = 547.0
+offset_bottom = 189.0
+scale = Vector2(1.4782903, 3.2071676)
+text = "YOU ROCK!!!"
+label_settings = SubResource("LabelSettings_1txte")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 226.0
+offset_top = 329.0
+offset_right = 269.0
+offset_bottom = 352.0
+text = "You Scored :"
+label_settings = SubResource("LabelSettings_26557")
+
+[node name="RetryButton" type="Button" parent="CanvasLayer"]
+offset_left = 428.0
+offset_top = 457.0
+offset_right = 478.0
+offset_bottom = 488.0
+scale = Vector2(2.543336, 2.4107182)
+text = "Retry"
+
+[node name="QuitButton" type="Button" parent="CanvasLayer"]
+offset_left = 409.99997
+offset_top = 564.0
+offset_right = 485.99997
+offset_bottom = 595.0
+scale = Vector2(2.294736, 2.439862)
+text = "To Menu"

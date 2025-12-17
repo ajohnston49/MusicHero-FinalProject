@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://doximsvft2tww"
+path="res://.godot/imported/A Flock Of Seagulls - I Ran (So Far Away) (Video).mp3-e353d361a801c3cc6c4361b7af12b544.mp3str"
+
+[deps]
+
+source_file="res://Songs/MP3/A Flock Of Seagulls - I Ran (So Far Away) (Video).mp3"
+dest_files=["res://.godot/imported/A Flock Of Seagulls - I Ran (So Far Away) (Video).mp3-e353d361a801c3cc6c4361b7af12b544.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bof8he5o5nsyh"
+path="res://.godot/imported/Bob Marley & The Wailers - Three Little Birds (Official Video).mp3-b3661d576b6e782c018cc9479fe01faa.mp3str"
+
+[deps]
+
+source_file="res://Songs/MP3/Bob Marley & The Wailers - Three Little Birds (Official Video).mp3"
+dest_files=["res://.godot/imported/Bob Marley & The Wailers - Three Little Birds (Official Video).mp3-b3661d576b6e782c018cc9479fe01faa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://xyssrlwuw1rm"
+path="res://.godot/imported/Metallica_ Nothing Else Matters (Official Music Video).mp3-a4d2d07e305301bf4f43dc92af182e3a.mp3str"
+
+[deps]
+
+source_file="res://Songs/MP3/Metallica_ Nothing Else Matters (Official Music Video).mp3"
+dest_files=["res://.godot/imported/Metallica_ Nothing Else Matters (Official Music Video).mp3-a4d2d07e305301bf4f43dc92af182e3a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
