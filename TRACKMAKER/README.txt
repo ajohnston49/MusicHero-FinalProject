@@ -1,16 +1,30 @@
-Hello From Alex!!
+
+[NOTEMAKER.PY BY: ALEX JOHNSTON]
+
+[VERSION: V1.0 – 12/16/2025]
 
 
-NoteMaker.py is a python PyGame built GUI system that builds the tracks to the game. 
+[DESCRIPTION]
+
+   - NOTEMAKER.PY IS A PYTHON PYGAME-BUILT GUI SYSTEM THAT CREATES CUSTOM TRACKS FOR THE MUSIC HERO GAME.
+
+[HOW IT WORKS]
+
+	1. LOAD AN .MP3 FILE
+
+	2. PRESS "PLAY SONG"
+
+	3. PRESS OR HOLD KEYS 1, 2, 3, 4 TO THE BEAT OF THE SONG AS IT PLAYS TO CREATE CUSTOM TRACKS MANUALLY
+
+	4. WHEN YOU ARE DONE, CLICK "SAVE CHART"
+
+    - THIS WILL SAVE A .JSON FILE THAT THE GAME IS PROGRAMMED TO READ
 
 
-How it works:
+[NOTES]
 
-- Load an .Mp3 file
+   - DESIGNED TO PROVIDE A MANUAL TRACK-BUILDING SYSTEM FOR MUSIC HERO
 
--Press "Play Song"
+   - OUTPUT FILES ARE IN .JSON FORMAT FOR EASY INTEGRATION WITH THE GAME ENGINE
 
-- You will press or hold keys 1 2 3 4 to the beat of the song as it is playing to create the custom tracks manually. 
-
--Then When Your done, click " Save Chart " and this will save a .JSON file that the game is able to be programmed to read. 
-
+   - BUILT USING PYGAME FOR SIMPLE, RESPONSIVE INPUT AND VISUAL FEEDBACK
